@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Milagrerito</title>
+    <script src="./lib/CSInterface.js"></script>      
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');</style>
+</head>
+<body>
+        <!--LISTA SUSPENSA DE ESCOLA     -->
+         <div class="custom-select">
+            <select name="escola" id="escola">
+                <label for="escola">Escola:</label>
+                <option value="0">Alura</option>
+                <option value="1">Programacao</option>
+                <option value="2">UX&Design</option>
+                <option value="3">Mobile</option>
+                <option value="4">InovGestao</option>
+                <option value="5">FrontEnd</option>
+                <option value="6">DataScience</option>
+                <option value="7">DevOps</option>
+                <option value="8">IA</option>
+            </select>
+        </div> 
+
+        <div>
+            <p class="titulosDivisores">Assets</p>    
+            <button class="buttonLibrary" id="runButton" type="run" onclick="lowerThird()" title="Lower Third">LT</button>
+            <button class="buttonLibrary" id="runButton" type="run" onclick="palavraChave()" title="Palavra Chave">PC</button>
+            <button class="buttonLibrary" id="runButton" type="run" onclick="Lista()" title="Lista">LS</button>
+            <button class="buttonLibrary" id="runButton" type="run" onclick="acessibilidade()" title="#Acessibilidade">#Ac</button> 
+            <button class="buttonLibrary" id="runButton" type="run" onclick="vinhetaFinal()" title="Vinhetaa">Vi</button>
+        </div>
+         
+        <div>
+            <p class="titulosDivisores">Transições</p>
+            <button class="buttonLibrary" id="runButton" type="run" onclick="transicaoLonga()" title="Transição Longa">TL</button> 
+            <button class="buttonLibrary" id="runButton" type="run" onclick="transicaoCurta()" title="Transição Curta">TC</button> 
+            <button class="buttonLibrary" id="runButton" type="run" onclick="transicaoAudio()" title="Transição Áudio">TA</button> 
+            <button class="buttonLibrary" id="runButton" type="run" onclick="transicaoLatam()" title="Transição Latam">TLa</button> 
+        </div>
+
+        <div>    
+            <p class="titulosDivisores">Efeitos</p>
+            <button class="buttonLibrary" id="runButton" type="run" onclick="effectCrop()" title="Crop">Cr</button> 
+            <button class="buttonLibrary" id="runButton" type="run" onclick="effectHorizontalFlip()" title="Horizontal Flip">HF</button> 
+            <button class="buttonLibrary" id="runButton" type="run" onclick="effectDeNoise()" title="Denoiser">Dn</button> 
+            <button class="buttonLibrary" id="runButton" type="run" onclick="effectDeEsser()" title="DeEsser">Ds</button>
+            <button class="buttonLibrary" id="runButton" type="run" onclick="effectDeReverb()" title="DeReverb">Dr</button>
+            <button class="buttonLibrary" id="runButton" type="run" onclick="effectParametricEq()" title="Parametric Eq">PEq</button>
+        </div>
+		<div>
+			<p class="titulosDivisores">Transição de vídeo</p>
+			<div  class="containerTransition">
+					<div class="custom-select">
+					<select name="transicaoVideos" id="videoTransitions">
+						<label for="transicaoVideos">Transição de Vídeo</label>
+						<option value="Cross Dissolve">Cross Dissolve</option>
+						<option value="Film Dissolve">Film Dissolve</option>
+						<option value="Additive Dissolve">Additive Dissolve</option>
+						<option value="Dip to Black">Dip to Black</option>
+					</select>
+					<button class="buttonLibrary" id="runButtonLi" type="run" onclick="effectTransition()" title="Aplicar">Aplicar</button>
+					</div>
+			</div>
+		</div>
+		
+    </div>
+</body>
+</html>

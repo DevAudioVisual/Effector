@@ -1,0 +1,68 @@
+body{
+    background-color: #0a1021;
+    color: rgb(19, 18, 18);
+}
+ 
+
+/* -------------------ESTILO DO BOTÃO DA BIBLIOTECA ---------------------------- */
+.buttonLibrary {
+    background-color: #D9D9D9; /* Green */
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 10px;
+       text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    border-radius: 8px;
+  }
+
+
+/* -------------------ESTILO DOS DIVISORES ---------------------------- */
+.titulosDivisores{
+    margin: 3px;
+    color: #C3C3C3;
+    font-size: 13px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+/* -------------------ESTILO DA LISTA DOS EFEITOS ---------------------------- */
+.custom-select {
+  display: flex;
+  flex-direction: row; /* Coloca o label acima do select */
+  max-width: fit-content; /* Garantir que não haja limitação no tamanho */
+  align-items: flex-start; /* Alinha à esquerda, se necessário */
+  gap: 5px; /* Espaçamento entre o label e o select */
+}
+
+.custom-select .select-label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.custom-select select {
+  appearance: none;
+  font-size: 1.15rem;
+  padding: 10px;
+  background-color: #D9D9D9;
+  border: none;
+  border-radius: 0.25rem;
+  color: #000;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  width: 100%; /* O seletor ocupa toda a largura do container */
+}
+
+
