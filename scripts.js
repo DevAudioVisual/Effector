@@ -101,4 +101,17 @@ function effectTransition() {
     cs.evalScript('$.runScript.effectTransition()')
 }
 
+const socket = new WebSocket('ws://localhost:8765');
 
+socket.addEventListener('message', function(event) {
+    if (event.data === "executar_funcao_js") {
+        minhaFuncaoJS();
+    }
+});
+
+// Função que será executada quando receber a mensagem
+function minhaFuncaoJS() {
+    console.log("Função JavaScript executada!");
+    var cs = new CSInterface;
+    cs.evalScript('$.runScript.importarLT()');
+}
