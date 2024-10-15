@@ -1,99 +1,104 @@
-   function lowerThird() {
-            var cs = new CSInterface;
-            var escola = document.getElementById("escola").value;
-            cs.evalScript('var escolaSel = "' + escola + '";')           
-            cs.evalScript('$.runScript.importarLT()')
-        }
+function lowerThird() {
+    var cs = new CSInterface;
+    var escola = document.getElementById("escola").value;
+    cs.evalScript('var escolaSel = "' + escola + '";')
+    cs.evalScript('$.runScript.importarLT()')
+}
 
-        function palavraChave() {
-            var cs = new CSInterface;
-            var escola = document.getElementById("escola").value;
-            cs.evalScript('var escolaSel = "' + escola + '";')           
-            cs.evalScript('$.runScript.importarPC()')
-        }
+function palavraChave() {
+    var cs = new CSInterface;
+    var escola = document.getElementById("escola").value;
+    cs.evalScript('var escolaSel = "' + escola + '";')
+    cs.evalScript('$.runScript.importarPC()')
+}
 
-        function Lista() {
-            var cs = new CSInterface;
-            var escola = document.getElementById("escola").value;
-            cs.evalScript('var escolaSel = "' + escola + '";')           
-            cs.evalScript('$.runScript.importarLista()')
-        }
+function Lista() {
+    var cs = new CSInterface;
+    var escola = document.getElementById("escola").value;
+    cs.evalScript('var escolaSel = "' + escola + '";')
+    cs.evalScript('$.runScript.importarLista()')
+}
 
-        function transicaoCurta() {
-            var cs = new CSInterface;
-            var escola = document.getElementById("escola").value;
-            cs.evalScript('var escolaSel = "' + escola + '";')           
-            cs.evalScript('$.runScript.transicaoCurta()')
-        }
+function transicaoCurta() {
+    var cs = new CSInterface;
+    var escola = document.getElementById("escola").value;
+    cs.evalScript('var escolaSel = "' + escola + '";')
+    cs.evalScript('$.runScript.transicaoCurta()')
+}
 
-        function transicaoLonga() {
-            var cs = new CSInterface;
-            var escola = document.getElementById("escola").value;
-            cs.evalScript('var escolaSel = "' + escola + '";')           
-            cs.evalScript('$.runScript.transicaoLonga()')
-        }
+function transicaoLonga() {
+    var cs = new CSInterface;
+    var escola = document.getElementById("escola").value;
+    cs.evalScript('var escolaSel = "' + escola + '";')
+    cs.evalScript('$.runScript.transicaoLonga()')
+}
 
-        function transicaoAudio() {
-            var cs = new CSInterface;
-            var escola = document.getElementById("escola").value;
-            cs.evalScript('var escolaSel = "' + escola + '";')           
-            cs.evalScript('$.runScript.transicaoAudio()')
-        }
+function transicaoAudio() {
+    var cs = new CSInterface;
+    var escola = document.getElementById("escola").value;
+    cs.evalScript('var escolaSel = "' + escola + '";')
+    cs.evalScript('$.runScript.transicaoAudio()')
+}
 
-        function transicaoLatam() {
-            var cs = new CSInterface;
-            var escola = document.getElementById("escola").value;
-            cs.evalScript('var escolaSel = "' + escola + '";')           
-            cs.evalScript('$.runScript.transicaoLatam()')
-        }
+function transicaoLatam() {
+    var cs = new CSInterface;
+    var escola = document.getElementById("escola").value;
+    cs.evalScript('var escolaSel = "' + escola + '";')
+    cs.evalScript('$.runScript.transicaoLatam()')
+}
 
-        function acessibilidade() {
-            var cs = new CSInterface;
-            var escola = document.getElementById("escola").value;
-            cs.evalScript('var escolaSel = "' + escola + '";')           
-            cs.evalScript('$.runScript.acessibilidade()')
-        }
+function acessibilidade() {
+    var cs = new CSInterface;
+    var escola = document.getElementById("escola").value;
+    cs.evalScript('var escolaSel = "' + escola + '";')
+    cs.evalScript('$.runScript.acessibilidade()')
+}
 
-        function vinhetaFinal() {
-            var cs = new CSInterface;
-            cs.evalScript('$.runScript.vinhetaFinal()')
-        }
+function vinhetaFinal() {
+    var cs = new CSInterface;
+    cs.evalScript('$.runScript.vinhetaFinal()')
+}
 
-		function effectCrop() {
-            var cs = new CSInterface;
-            cs.evalScript('$.runScript.effectCrop()')
-        }
+function effectGaussianBlur() {
+    var cs = new CSInterface;
+    cs.evalScript('$.runScript.effectGaussianBlur()')
+}
 
-		function effectHorizontalFlip() {
-            var cs = new CSInterface;
-            cs.evalScript('$.runScript.effectHorizontalFlip()')
-        }
+function effectCrop() {
+    var cs = new CSInterface;
+    cs.evalScript('$.runScript.effectCrop()')
+}
 
-		function effectDeNoise() {
-            var cs = new CSInterface;
-            cs.evalScript('$.runScript.effectDeNoise()')
-        }
+function effectHorizontalFlip() {
+    var cs = new CSInterface;
+    cs.evalScript('$.runScript.effectHorizontalFlip()')
+}
 
-		function effectDeEsser() {
-            var cs = new CSInterface;
-            cs.evalScript('$.runScript.effectDeEsser()')
-        }
+function effectDeNoise() {
+    var cs = new CSInterface;
+    cs.evalScript('$.runScript.effectDeNoise()')
+}
 
-		function effectDeReverb() {
-            var cs = new CSInterface;
-            cs.evalScript('$.runScript.effectDeReverb()')
-        }
+function effectDeEsser() {
+    var cs = new CSInterface;
+    cs.evalScript('$.runScript.effectDeEsser()')
+}
 
-		function effectParametricEq() {
-            var cs = new CSInterface;
-            cs.evalScript('$.runScript.effectParametricEq()')
-        }
+function effectDeReverb() {
+    var cs = new CSInterface;
+    cs.evalScript('$.runScript.effectDeReverb()')
+}
 
-		function effectTransition() {
-            var cs = new CSInterface;
-            var nomeTransition = document.getElementById("videoTransitions").value;
-            cs.evalScript('var nomeTransition = "' + nomeTransition + '";')           
-            cs.evalScript('$.runScript.effectTransition()')
-        }
+function effectParametricEq() {
+    var cs = new CSInterface;
+    cs.evalScript('$.runScript.effectParametricEq()')
+}
+
+function effectTransition() {
+    var cs = new CSInterface;
+    var nomeTransition = document.getElementById("videoTransitions").value;
+    cs.evalScript('var nomeTransition = "' + nomeTransition + '";')
+    cs.evalScript('$.runScript.effectTransition()')
+}
 
 
