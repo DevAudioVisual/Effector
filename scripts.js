@@ -101,17 +101,26 @@ function effectTransition() {
     cs.evalScript('$.runScript.effectTransition()')
 }
 
-const socket = new WebSocket('ws://localhost:8765');
+const ws = new WebSocket('ws://localhost:8081');
 
-socket.addEventListener('message', function(event) {
-    if (event.data === "executar_funcao_js") {
-        minhaFuncaoJS();
+ws.onopen = () => {
+    console.log('Conectado ao servidor WebSocket');
+};
+
+ws.onmessage = (event) => {
+    const message = event.data;
+    console.log(`Mensagem recebida do servidor: ${message}`);
+
+    if (message === 'executar_acao') {
+        // Chamar o JSX quando a mensagem for recebida
+        csInterface.evalScript('executarFuncaoJSX()');
     }
-});
+};
 
-// Função que será executada quando receber a mensagem
-function minhaFuncaoJS() {
-    console.log("Função JavaScript executada!");
-    var cs = new CSInterface;
-    cs.evalScript('$.runScript.importarLT()');
-}
+ws.onerror = (error) => {
+    console.error('Erro no WebSocket:', error);
+};
+
+ws.onclose = () => {
+    console.log('Conexão WebSocket fechada');
+};

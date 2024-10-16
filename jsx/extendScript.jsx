@@ -448,4 +448,9 @@ $.runScript = {
 		}
 
 	},
+
+	executarFuncaoJSX: function() {
+		alert("A função JSX foi chamada e executada no Premiere Pro!");
+		// Aqui você pode colocar qualquer ação que deseja no Premiere
+	}
 }
